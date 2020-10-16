@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:olx/Sell.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,14 +9,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'olx',
-      home: Scaffold(
+      home: Sell(),
+      /* Scaffold(
         appBar: AppBar(
           title: Text('olx'),
         ),
         body: Center(
           child: Text('olx'),
         ),
-      ),
+      ),*/
     );
   }
 }
