@@ -3,9 +3,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:carousel_slider/carousel_slider.dart';
 
 class Product5 extends StatelessWidget {
-  String name;
-  String details;
-  Product5({this.name, this.details});
+  Product5();
 
   @override
   Widget build(BuildContext context) {
