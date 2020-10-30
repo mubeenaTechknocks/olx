@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:olx/profile.dart';
 
 class EditProfile extends StatelessWidget{
   @override
@@ -156,7 +157,13 @@ class EditProfile extends StatelessWidget{
                           borderRadius: BorderRadius.circular(5.0),
                         ),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context, 
+                            MaterialPageRoute(
+                              builder: (context) => Profile(),
+                            ),
+                            );
+                          },
                           child: Text('Edit Profile',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,

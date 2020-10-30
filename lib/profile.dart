@@ -13,9 +13,14 @@ class ProfileScreenState extends State<Profile> {
       backgroundColor: Color.fromRGBO(245, 245, 245, 1),
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: Icon(
-          Icons.close,
-          color: Color.fromRGBO(0, 48, 52, 1),
+        leading: IconButton(
+          icon: Icon(
+            Icons.close,
+            color: Color.fromRGBO(0, 48, 52, 1),
+            ),
+             onPressed: (){
+          Navigator.pop(context);
+        },
         ),
       ),
 
