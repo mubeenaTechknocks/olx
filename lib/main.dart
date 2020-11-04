@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-//import 'package:olx/navigation.dart';
-//import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
-import 'package:olx/Profile.dart';
+
+
+import 'package:olx/navigation.dart';
+import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+
+
 
 void main() => runApp(MyApp());
 
@@ -12,8 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'olx',
-      home: Profile(),
-      //home: olx/Navigation
+
+
+      home: Navigation(),
+
     );
   }
 }
