@@ -4,8 +4,12 @@ import 'package:olx/Bikes.dart';
 import 'package:olx/BooksSportsHobbies.dart';
 import 'package:olx/Cars.dart';
 import 'package:olx/ElectronicsAppliances.dart';
+import 'package:olx/Furniture.dart';
 import 'package:olx/Mobiles.dart';
 import 'package:olx/MoreCategories.dart';
+import 'package:olx/Properties.dart';
+
+import 'package:olx/Home.dart';
 
 class Sell extends StatefulWidget {
   @override
@@ -39,7 +43,7 @@ class SellScreenState extends State<Sell> {
                         onPressed: () => setState(() {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => Cars()),
+                                MaterialPageRoute(builder: (context) => Home()),
                               );
                             })),
                   ),
@@ -80,7 +84,7 @@ class SellScreenState extends State<Sell> {
         GridView.count(
             shrinkWrap: true,
             crossAxisCount: 2,
-            childAspectRatio: MediaQuery.of(context).size.height / 450,
+            childAspectRatio: MediaQuery.of(context).size.height / 350,
             padding: const EdgeInsets.all(15),
             children: <Widget>[
               GestureDetector(
@@ -273,6 +277,101 @@ class SellScreenState extends State<Sell> {
                             alignment: Alignment.center,
                             child: Text(
                               '  Appliances',
+                              style: TextStyle(
+                                fontSize: 13.0,
+                                fontWeight: FontWeight.w400,
+                                color: Color.fromRGBO(0, 48, 52, 1),
+                                letterSpacing: .1,
+                                wordSpacing: .5,
+                              ),
+                            ))
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () => setState(() {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Furniture()),
+                  );
+                }),
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border(
+                    right: BorderSide(
+                      //                   <--- left side
+                      color: Color.fromRGBO(0, 48, 52, 1),
+                      width: 0.5,
+                    ),
+                    bottom: BorderSide(
+                      //                    <--- top side
+                      color: Color.fromRGBO(0, 48, 52, 1),
+                      width: 0.5,
+                    ),
+                  )),
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          Icons.weekend,
+                          color: Color.fromRGBO(0, 48, 52, 1),
+                          size: 30.0,
+                        ),
+                        Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              ' Furniture',
+                              style: TextStyle(
+                                fontSize: 13.0,
+                                fontWeight: FontWeight.w400,
+                                color: Color.fromRGBO(0, 48, 52, 1),
+                                letterSpacing: .1,
+                                wordSpacing: .5,
+                              ),
+                            ))
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () => setState(() {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Properties()),
+                  );
+                }),
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border(
+                    bottom: BorderSide(
+                      //                    <--- top side
+                      color: Color.fromRGBO(0, 48, 52, 1),
+                      width: 0.5,
+                    ),
+                  )),
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          Icons.domain,
+                          color: Color.fromRGBO(0, 48, 52, 1),
+                          size: 30.0,
+                        ),
+                        Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              ' Properties',
                               style: TextStyle(
                                 fontSize: 13.0,
                                 fontWeight: FontWeight.w400,
