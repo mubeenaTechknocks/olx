@@ -1,6 +1,8 @@
 //import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'package:olx/sell.dart';
+
 class ElectronicsAppliances extends StatefulWidget {
   @override
   ElectronicsAppliancesScreenState createState() =>
@@ -20,54 +22,51 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
                 children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
-                  child: InkWell(
-                    onTap: () => {},
-                    child: Container(
-                      padding: EdgeInsets.only(bottom: 20.0),
-                      /*decoration: BoxDecoration(
-                          border: Border(
-                              bottom: BorderSide(
-                        color: Colors.black12,
-                        width: 1.0,
-                      ))),*/
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(10, 40, 0, 0),
-                            child: Icon(
+                padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+                child: Container(
+                  padding: EdgeInsets.only(bottom: 5.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 25, 0, 0),
+                        child: IconButton(
+                            icon: Icon(
                               Icons.arrow_back,
                               color: Color.fromRGBO(0, 48, 52, 1),
                               size: 30.0,
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20.0, 40.0, 15.0, 0),
-                            child: Padding(
-                              padding: EdgeInsets.symmetric(
-                                  vertical: 0.0, horizontal: 10.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Text(
-                                    'Electronics & Appliances',
-                                    style: TextStyle(
-                                      fontSize: 23.0,
-                                      fontWeight: FontWeight.w500,
-                                      color: Color.fromRGBO(0, 48, 52, 1),
-                                      letterSpacing: .1,
-                                      wordSpacing: .5,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
+                            onPressed: () => setState(() {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Sell()),
+                                  );
+                                })),
                       ),
-                    ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 25.0, 15.0, 0),
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 0.0, horizontal: 10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                ' Electronics & Appliances',
+                                style: TextStyle(
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.w500,
+                                  color: Color.fromRGBO(0, 48, 52, 1),
+                                  letterSpacing: .1,
+                                  wordSpacing: .5,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -80,7 +79,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -128,7 +127,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -182,7 +181,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -236,7 +235,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -290,7 +289,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -344,7 +343,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -398,7 +397,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -452,7 +451,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -506,7 +505,7 @@ class ElectronicsAppliancesScreenState extends State<ElectronicsAppliances> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
