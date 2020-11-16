@@ -1,6 +1,8 @@
 //import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'package:olx/sell.dart';
+
 class Bikes extends StatefulWidget {
   @override
   BikesScreenState createState() => BikesScreenState();
@@ -20,46 +22,51 @@ class BikesScreenState extends State<Bikes> {
               Container(
                 width: MediaQuery.of(context).size.width,
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
-                  child: InkWell(
-                    onTap: () => {},
-                    child: Container(
-                      padding: EdgeInsets.only(bottom: 20.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(10, 40, 0, 0),
-                            child: Icon(
-                              Icons.arrow_back,
-                              color: Color.fromRGBO(0, 48, 52, 1),
-                              size: 30.0,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20.0, 40.0, 15.0, 0),
-                            child: Padding(
-                              padding: EdgeInsets.symmetric(
-                                  vertical: 0.0, horizontal: 10.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Text(
-                                    'Bikes',
-                                    style: TextStyle(
-                                      fontSize: 23.0,
-                                      fontWeight: FontWeight.w500,
-                                      color: Color.fromRGBO(0, 48, 52, 1),
-                                      letterSpacing: .1,
-                                      wordSpacing: .5,
-                                    ),
-                                  ),
-                                ],
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+                  child: Container(
+                    padding: EdgeInsets.only(bottom: 5.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0, 25, 0, 0),
+                          child: IconButton(
+                              icon: Icon(
+                                Icons.arrow_back,
+                                color: Color.fromRGBO(0, 48, 52, 1),
+                                size: 30.0,
                               ),
+                              onPressed: () => setState(() {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Sell()),
+                                    );
+                                  })),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0, 25.0, 15.0, 0),
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 0.0, horizontal: 10.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  ' Bikes',
+                                  style: TextStyle(
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.w500,
+                                    color: Color.fromRGBO(0, 48, 52, 1),
+                                    letterSpacing: .1,
+                                    wordSpacing: .5,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -73,7 +80,7 @@ class BikesScreenState extends State<Bikes> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -121,7 +128,7 @@ class BikesScreenState extends State<Bikes> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -175,7 +182,7 @@ class BikesScreenState extends State<Bikes> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
@@ -229,7 +236,7 @@ class BikesScreenState extends State<Bikes> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                   child: InkWell(
                     onTap: () => {},
                     child: Container(
